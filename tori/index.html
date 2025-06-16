@@ -66,10 +66,13 @@ h1, h2, h3, h4, h5, h6 {
 빛은 어떤 기분일까?
 
 (input: bind $password)
-[[비밀번호 확인-&gt;Hint1-check]]</tw-passagedata><tw-passagedata pid="3" name="Hint1-check" tags="" position="800,375" size="100,100">(if: $password is &quot;light&quot;)[[[다음으로 넘어가기-&gt;Hint2]]](else:)[[[되돌아가기-&gt;Hint1]]]</tw-passagedata><tw-passagedata pid="4" name="Hint2" tags="" position="675,500" size="100,100">깨끗한 공기, 맑은 마음, 예술가의 마지막의 숨
+[[비밀번호 확인-&gt;Hint1-check]]</tw-passagedata><tw-passagedata pid="3" name="Hint1-check" tags="" position="850,375" size="100,100">(if: $password is &quot;light&quot;)[[[다음으로 넘어가기-&gt;Hint4]]](else:)[[[다시 하십시오.-&gt;Hint1]]]</tw-passagedata><tw-passagedata pid="4" name="Hint2" tags="" position="675,650" size="100,100">공기로 마음을 맑게 해줘요
 
 (input: bind $password)
-[[비밀번호 확인-&gt;Hint2-check]]</tw-passagedata><tw-passagedata pid="5" name="Hint2-check" tags="" position="800,500" size="100,100">(if: $password is &quot;freedom&quot;)[[[다음으로 넘어가기-&gt;Hint3]]](else:)[[[되돌아가기-&gt;Hint2]]]</tw-passagedata><tw-passagedata pid="6" name="Hint3" tags="" position="675,625" size="100,100">공기청정기</tw-passagedata></tw-storydata>
+[[비밀번호 확인-&gt;Hint2-check]]</tw-passagedata><tw-passagedata pid="5" name="Hint2-check" tags="" position="850,650" size="100,100">(if: $password is &quot;freedom&quot;)[[[다음으로 넘어가기-&gt;Hint3]]](else:)[[[다시 하십시오.-&gt;Hint2]]]</tw-passagedata><tw-passagedata pid="6" name="Hint3" tags="" position="675,775" size="100,100">공기청정기</tw-passagedata><tw-passagedata pid="7" name="Hint4" tags="" position="675,500" size="100,100">책장을 넘기며 첫 장을 열었다.
+
+(input: bind $password)
+[[비밀번호 확인-&gt;Hint4-check]]</tw-passagedata><tw-passagedata pid="8" name="Hint4-check" tags="" position="850,525" size="100,100">(if: $password is &quot;love&quot;)[[[다음으로 넘어가기-&gt;Hint2]]](else:)[[[다시 하십시오.-&gt;Hint4]]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
